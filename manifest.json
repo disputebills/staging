@@ -1,0 +1,25 @@
+{
+	"name": "Dispute Bills",
+	"icons": [
+		{
+			"src": "\/android-chrome-36x36.png?v=WGG3QOMbWj",
+			"sizes": "36x36",
+			"type": "image\/png",
+			"density": 0.75
+		},
+		{
+			"src": "\/android-chrome-48x48.png?v=WGG3QOMbWj",
+			"sizes": "48x48",
+			"type": "image\/png",
+			"density": 1
+		},
+		{
+			"src": "\/android-chrome-72x72.png?v=WGG3QOMbWj",
+			"sizes": "72x72",
+			"type": "image\/png",
+			"density": 1.5
+		}
+	],
+	"start_url": "http:\/\/disputebills.com\/",
+	"display": "standalone"
+}

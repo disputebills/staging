@@ -1,0 +1,88 @@
+ul.list-group {
+	border: 1px solid rgba(0,0,0,.03);
+	padding: 12px;
+}
+ul.list-group .list-group-item {
+	padding: 5px;
+}
+ul.list-group .list-group-item.list-group-item-info {
+	background: rgba(0,0,0,.03);
+	border: 1px solid rgba(0,0,0,.03);
+	padding: 12px;
+}
+ul.list-group .list-group-item img {
+	vertical-align: middle;
+}
+.postbox img {
+	max-width: 100%;
+	height: auto;
+}
+.postbox .crestaButton {
+	background: #0074a2;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 8px;
+	display: inline-block;
+	margin-top: 5px;
+}
+.postbox .crestaButton:hover {
+	background: #008cc3;
+}
+.postbox .crestaGreen {
+	color: #51ab6d;
+}
+
+.postbox label > input[name=cresta_social_shares_style] {
+  display:none;
+}
+.postbox label > input[name=cresta_social_shares_style] + img {
+  cursor:pointer;
+  border:2px solid rgba(0,0,0,.03);
+  margin-right: 12px;
+  margin-bottom: 12px;
+  -o-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.postbox label > input[name=cresta_social_shares_style] + img:hover {
+  border:2px solid rgba(0,0,0,.1);
+}
+.postbox label > input:checked[name=cresta_social_shares_style] + img {
+  border:2px solid #0074a2;
+}
+.wrap h2 {
+	display: inline-block;
+}
+.crestaButtonUpgrade {
+	background: #d54e21;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 8px;
+	display: inline-block;
+	margin-top: 5px;
+}
+.crestaButtonUpgrade:hover {
+	background: #e47e5c;
+	color: #ffffff;
+}
+.crestaDisabled {
+	color: rgba(0,0,0,.5);
+}
+.crestaDisabled span {
+	color: #d54e21;
+}
+small {
+	display: block;
+	font-size: 80%;
+}
+.dashicons.space {
+    margin-right: 10px;
+}
+.inside h3 {
+    background: #ccc;
+    border: 1px solid rgba(0,0,0,.03);
+    padding: 12px;
+}

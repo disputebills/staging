@@ -1,0 +1,49 @@
+/*
+    theme      : Fresh
+    type       : Theme-Options for plugin and theme
+    since      : 04/01/2016
+*/
+
+
+/* =PLUGINS */
+.ilenplugin-options .has-right-sidebar #post-body-content{
+    width: 70%;
+}
+.ilenplugin-options #tabs > ul li a{
+    padding: 11px 11px;
+    font-size: 15px;
+    border-top: 2px solid #E2E2E2;
+}
+.ilenplugin-options .my-wrap-plugin header h2{
+    margin-top: 17px!important;
+}
+.ilenplugin-options .ilentabs #nav h2 a.nav-tab-active, .ilenplugin-options #tabs .ui-state-active a {
+    color: #989898!important;
+}
+.ilenplugin-options #tabs > ul li{
+    margin: 0 15px;
+}
+.ilenplugin-options header {
+    border-top: 9px solid #52aae2;
+}
+.ilenplugin-options #tabs .ui-state-active a {
+    border-top: 2px solid #52aae2!important;
+}
+.ilenplugin-options .row .a {
+    width: 35%;
+}
+.ilenplugin-options .row .b {
+    width: 63%;
+}
+.ilenplugin-options .postbox {
+    box-shadow: 0px 0px 5px rgba(0,0,0,.2);
+}
+.ilenplugin-options .upload input[type="text"] {
+    width: 73.5%!important;
+}
+.ilenplugin-options .row.upload .preview {
+    width: 45%;
+}
+.ilenplugin-options .row {
+    border-bottom: 1px dotted #E4E4E4;
+}

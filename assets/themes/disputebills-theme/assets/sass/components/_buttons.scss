@@ -1,0 +1,120 @@
+// Buttons Component Styles
+// ========================================
+
+// Main Button
+@mixin button{
+  border-radius: 2px;
+  @include font-type($primary-sans-serif, normal, $bold);
+  @include rem(padding, 10px 12px);
+  @include rem(margin, 5px 0 1px);
+  @include transition (all 0.3s ease-in-out);
+  display: inline-block;
+  line-height: normal;
+  text-transform: uppercase;
+  @include s-small;
+  letter-spacing: 1px;
+  width: 180px;
+  text-align: center;
+
+  text{
+    align: center;
+    decoration: none;
+  }
+  -webkit-appearance: none;
+
+  &:hover{ cursor: pointer; }
+
+  &:focus{
+    border: none;
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+// Button Styles
+@each $button in $buttons{
+  $type:        nth($button, 1);
+  $bg-1:        nth($button, 2);
+  $border:      nth($button, 3);
+  $color:       nth($button, 4);
+  $hover-bg:    nth($button, 5);
+  $hover-color: nth($button, 6);
+
+  .button-#{$type}{
+    background: $bg-1;
+    border: 1px solid $border;
+    color: $color;
+    @include button;
+
+    &:hover{
+      background-color: $hover-bg;
+      border: 1px solid $hover-bg;
+      color: $hover-color;
+      opacity: 1;
+    }
+
+    &:active{
+      background-color: $hover-bg;
+      color: darken($hover-color, 0.5);
+      border: 1px solid $hover-bg;
+    }
+
+    &:focus{ border: 1px solid $hover-bg; }
+  }
+
+  // Links
+  .link-#{$type}{
+    @include s-small;
+    @include font-type($primary-sans-serif, normal, $bold);
+    color: $bg-1;
+    text-transform: uppercase;
+    @include transition(all 0.3s ease-in-out);
+    display: inline-block;
+
+    &:hover{
+      color: $hover-bg;
+    }
+  }
+}
+
+
+#{$all-buttons} {
+  @include appearance(none);
+  background-color: $blue-base;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $primary-sans-serif;
+  border-radius: 2px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: $bold;
+  line-height: 1;
+  text-transform: uppercase;
+  @include s-small;
+  @include rem(padding, 15px 12px);
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+  letter-spacing: 1px;
+  @include transition(0.3s ease-in-out);
+  @include media($tablet){ width: 200px; }
+
+  &:hover,
+  &:focus {
+    background-color: shade($blue-base, 20%);
+    color: #fff;
+    outline: none;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: $blue-base;
+    }
+  }
+}

@@ -1,0 +1,107 @@
+.freebie-sub-box{
+    background: none repeat scroll 0 0 #F8F8F8 !important;
+	color:#5E6066 !important;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+    margin:30px 0px;
+    padding: 5px;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+	font-size:13px !important;
+	line-height:normal !important;
+	line-height:22px !important;
+}
+
+.freebie-sub-box a{
+	outline:none !important;
+	text-decoration:none !important;
+	border:0px !important;
+}
+
+.freebie-sub-box .freebiesub-error{
+	color:red !important;
+	display:block !important;
+	margin:0 0 20px 0 !important;
+}
+
+.freebie-sub-box .freebiesub-success{
+	color:green !important;
+	display:block !important;
+	margin:0 0 10px 0 !important;
+}
+
+.freebie-sub-box .freebiesub-success a{
+	color:#2C2D31 !important;
+	font-weight:bold !important;
+}
+
+.freebie-sub-box h3{
+	margin:0px !important;
+	padding:0px !important;
+	font-size:15px !important;
+	font-weight:bold !important;
+	text-transform:none !important;
+	letter-spacing:normal !important;
+	color:#2C2D31 !important;
+	line-height:normal !important;
+}
+
+.freebie-sub-box p{
+	margin:0px !important;
+	padding:0px !important;
+}
+
+.freebie-sub-inner{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CBCECF;
+    padding:16px 20px;
+}
+
+.freebie-sub-form {
+	margin:25px 0 0 0;
+}
+
+.freebie-sub-form label{
+	margin:25px 0 0 0 !important;
+	display:block;
+	font-size:11px !important;
+}
+
+.freebie-sub-form .agree{
+	float:left;
+	margin:7px 8px 10px 0 !important;
+}
+
+.freebie-sub-form .name{
+	width:280px !important;
+	border:1px solid #D4D4D8 !important;
+	-webkit-box-shadow: 1px 2px 1px 0px #f5f5f5;
+	-moz-box-shadow: 1px 2px 1px 0px #f5f5f5;
+	box-shadow: 1px 2px 1px 0px #f5f5f5;
+	padding:6px !important;
+	margin:0px !important;
+	color:#BBBBBB !important;
+	font-size:13px !important;
+	display:block;
+	margin:0 0 10px 0 !important;
+}
+
+.freebie-sub-box .freebie-submit{
+	background:url(../images/button.png) no-repeat scroll 0 0 transparent;
+	height:30px !important;
+	width:92px !important;
+	line-height:30px !important;
+	border:0px !important;
+	color:#ffffff !important;
+	font-size:13px !important;
+	font-weight:bold !important;
+	cursor:pointer !important;
+	padding:0px !important;
+	margin:0 0 0 7px !important;
+	text-shadow: 0px 1px 0px #b9670e !important;
+	filter: dropshadow(color=#b9670e, offx=0, offy=1) !important;
+}
+
+.freebie-sub-box .freebie-submit:hover{
+	background:url(../images/button.png) no-repeat scroll bottom left transparent;
+}

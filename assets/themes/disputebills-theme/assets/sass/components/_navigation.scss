@@ -1,0 +1,160 @@
+/*-----------------------
+Primary Nav
+-----------------------*/
+
+
+.site-header{
+  display: inline-block;
+  width: 100%;
+  @include rem(padding, 20px 20px 12px);
+}
+
+.site-title{
+  float: left;
+  margin-top: -5px;
+  width: 200px;
+}
+
+nav{
+  float: left;
+
+  li{
+    display: inline-block;
+    @include rem(margin, 0 0 0 20px);
+    text-transform: uppercase;
+    @include s-small;
+
+    a{
+      color: $blue-base;
+      font-weight: $bold;
+      font-style: normal;
+    }
+  }
+}
+
+.app-links{
+  @include media($tablet-landscape) {
+    @include position(absolute, -11px 0px null null);
+  }
+  li{
+    display: inline-block;
+    @include rem(margin, 0 0 0 20px);
+  }
+
+  .button-blue-base{ margin: 0; }
+}
+
+
+/*-----------------------
+Primary Nav
+-----------------------*/
+.sliding-panel-content{
+    nav li, .sign-in{
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+
+    @include media($tablet-landscape) {
+      @include rem(margin, 0 0 0 20px);
+      width: inherit;
+    }
+  }
+
+  nav a, .sign-in a{
+    //background-color: $blue-darker;
+    color: $white-med;
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    @include rem(padding, 10px 20px);
+
+
+    @include media($tablet-landscape) {
+      color: $blue-base;
+      padding: 0;
+      width: inherit;
+    }
+
+    &:hover{
+      background-color: $blue-dark;
+      @include media($tablet-landscape) {
+        background-color: transparent;
+        color: $blue-dark;
+      }
+    }
+  }
+
+  .button-blue-base{
+    @include rem(margin-top, 15px);
+
+    @include media($tablet-landscape) { margin: 0; }
+  }
+}
+
+
+/*-----------------------
+Sliding Panel
+-----------------------*/
+.sliding-panel-button{
+  float: right;
+  @include media($tablet-landscape) { display: none; }
+
+  img{
+    cursor: pointer;
+    display: inline-block;
+    @include rem(margin, -3px 0 0 0);
+    width: 35px;
+  }
+}
+
+//Panel Content
+.sliding-panel-content {
+  $sliding-panel-width: 220px;
+  background-color: red;
+  @include position(fixed, 0 auto 0 0);
+  @include size($sliding-panel-width 100%);
+  @include transform(translateX(- $sliding-panel-width));
+  @include transition(all 0.25s linear);
+  background-color: $black-dark;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  z-index: 999999;
+
+  @include media($tablet-landscape){
+    background-color: transparent;
+    float: left;
+    overflow: visible;
+    position: relative;
+    transform: none;
+    transition: none;
+    width: calc(100% - 200px);
+  }
+
+  &.is-visible{ @include transform(translateX(0)); }
+}
+
+//Fade Screen
+.sliding-panel-fade-screen{
+  @include position(fixed, 0px 0px 0px 0px);
+  @include transition;
+  background: #000;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9999;
+  @include media($tablet-landscape) { display: none; }
+
+  &.is-visible {
+    opacity: 0.4;
+    visibility: visible;
+  }
+}
+
+//Close Panel
+.sliding-panel-close{
+  border-bottom: 1px solid $black-light;
+  cursor: pointer;
+  display: inline-block;
+  @include rem(padding, 25px 20px);
+  @include rem(margin-bottom, -3px);
+  @include media($tablet-landscape) { display: none; }
+}

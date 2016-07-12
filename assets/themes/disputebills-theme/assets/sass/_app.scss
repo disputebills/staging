@@ -1,0 +1,53 @@
+/*
+Theme Name: DisputeBills
+Theme URI: http://disputebills.com
+Author: LaunchPad Lab
+Author URI: http://launchpadlab.com
+Description: A custom WordPress Theme for DisputeBills based on Some Like it Neat (https://github.com/digisavvy/some-like-it-neat)
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Bourbon, Bitters, Neat
+2.0 - Normalize
+3.0 - Elements
+4.0 - Forms
+5.0 - Components/ Add-onss
+6.0 - Layout and Structure
+    6.1 - Header
+    6.2 - Navigation
+    6.3 - Content
+    6.4 - Page Templates
+    6.5 - Sidebar
+    6.6 - Footer
+    6.7 - Accessibility
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 Bourbon, Bitters, Neat
+--------------------------------------------------------------*/
+@import '../../assets/bower_components/bourbon/app/assets/stylesheets/bourbon';
+//@import 'base/base'; // Bitters
+//@import 'grid-settings';
+@import '../../assets/bower_components/neat/app/assets/stylesheets/neat';
+
+@import "settings/settings";
+@import "base/typography";
+
+
+// Components List
+@import "components/buttons";
+@import "components/navigation";
+@import "components/footer";
+@import "components/forms";
+
+//Pages
+@import "pages/home";
+@import "pages/blog";

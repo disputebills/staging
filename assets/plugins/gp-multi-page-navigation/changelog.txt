@@ -1,0 +1,43 @@
+
+# Changelog
+
+## 1.0.beta2.2
+
+    - Fixed issue where validation was still happening for custom page links
+
+## 1.0.beta2.1
+
+    - Fixed issue where navigating backwards and then saving form progression would result in an error when resuming form
+
+## 1.0.beta2
+
+    - Fixed issue where navigating back to a page and then forward via page links in 'Last Page' and 'Progession' modes
+    would incorrectly apply validation to all pages which sometimes resulted in skipping forward to pages the user had
+    not yet reached; this also resolved anissue where progressing to the furthest page reached after navigating
+    backwords would result in that page displaying validation errors which should not occur until the page has been
+    intentionally submitted
+
+## 1.0.beta1.5
+
+	- Fixed issue where using Save & Continue on last page of form resulted in an error when resuming from Save & Continue
+
+## 1.0.beta1.4
+
+    - Fixed issue where if non-GF form was on page, custom page links outside the form element would not work
+
+## 1.0.beta1.3
+
+    - Added support for custom page links outside of the form element
+
+## 1.0.beta1.2
+
+    - Fixed issue where fields shown/hidden via conditional logic could be bypassed if the user "skipped" the page via page navigation
+
+## 1.0.beta1.1
+
+    - Fixed issue where plugins using the gform_validation filter would sometimes override the bypass validation functionality
+    - Updated plugin description
+
+## 1.0.beta1.0
+
+    - Intial release.

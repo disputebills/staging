@@ -1,0 +1,115 @@
+// Base Typography
+// ========================================
+
+html{
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: $white-base !important;
+  @include font-type($primary-sans-serif, normal, normal);
+  font: 100%/1.618;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: normal;
+  font-weight: normal;
+  @include font-type($primary-sans-serif, normal, $regular);
+  @include rem(margin-bottom, 12px);
+  color: $black-base;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.2;
+
+  a{
+    border-bottom: 2px solid transparent;
+    font-weight: $bold;
+
+    &:hover {
+      border-bottom: 2px solid $blue-dark;
+    }
+  }
+}
+
+h1 { font-size: $font-size-base * 2.50; @include media($tablet){ font-size: $font-size-base * 4; } }
+h2 { font-size: $font-size-base * 2.00; @include media($tablet){ font-size: $font-size-base * 3.00; } }
+h3 { font-size: $font-size-base * 1.45; @include media($tablet){ font-size: $font-size-base * 2.25; } }
+h4 { font-size: $font-size-base * 1.25; @include media($tablet){ font-size: $font-size-base * 1.35; } }
+h5 { font-size: $font-size-base * 1.00; @include media($tablet){ font-size: $font-size-base * 1.25; } }
+h6 { font-size: $font-size-base - 2.00; @include media($tablet){ font-size: $font-size-base * 1.00; } }
+
+h1{ color: $white-base; }
+
+h5{ color: $blue-base; font-weight: $bold; }
+h6{ font-weight: $bold; }
+p {
+  font-weight: normal;
+  font-style: normal;
+  @include font-type($primary-sans-serif, normal, normal);
+  @include s-base;
+  @include rem(margin-bottom, 12px);
+  line-height: $base-line-height;
+  color: $black-base;
+
+  &:last-child { @include rem(margin-bottom, 0); }
+}
+
+li,
+dd{
+  @include font-type($primary-sans-serif, normal, normal);
+  @include rem(margin-top, 3px);
+  line-height: $base-line-height;
+  color: $black-base;
+}
+
+a {
+  color: $blue-base;
+  font-weight: $bold;
+  @include font-type($primary-sans-serif, normal, normal);
+  @include transition(all 0.3s ease-in-out);
+  text-decoration: none;
+
+  &:hover {
+    color: $blue-dark;
+    text-decoration: none;
+  }
+
+  //&.underline:hover { border-bottom: 1px solid $blue-base;}
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+strong { font-weight: $bold; }
+i, em { font-style: italic; font-weight: 200; }
+
+blockquote{
+  line-height: 1.5;
+}
+
+.subheader{
+  @include s-medium;
+
+  @include media($tablet){
+    @include s-big;
+  }
+}
+
+.page-header .subheader{
+  @include media($tablet){
+    @include center;
+    max-width: 575px;
+  }
+}

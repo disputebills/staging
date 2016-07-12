@@ -1,0 +1,225 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cresta Social Share Counter\n"
+"POT-Creation-Date: 2016-03-18 16:52+0100\n"
+"PO-Revision-Date: 2016-03-18 16:53+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: cresta-metabox.php:14
+msgid "Cresta Social Share Counter"
+msgstr ""
+
+#: cresta-metabox.php:29
+msgid "Hide icons in this page?"
+msgstr ""
+
+#: cresta-social-share-counter.php:28
+msgid "Cresta Social Share Counter Settings"
+msgstr ""
+
+#: cresta-social-share-counter.php:32
+msgid "Settings"
+msgstr ""
+
+#: cresta-social-share-counter.php:460
+msgid "Settings Saved..."
+msgstr ""
+
+#: cresta-social-share-counter.php:526
+msgid "Select buttons to display on website :"
+msgstr ""
+
+#: cresta-social-share-counter.php:530
+msgid "Choose Buttons"
+msgstr ""
+
+#: cresta-social-share-counter.php:541
+msgid "Twitter username (optional):"
+msgstr ""
+
+#: cresta-social-share-counter.php:556 cresta-social-share-counter.php:559
+#: cresta-social-share-counter.php:562 cresta-social-share-counter.php:565
+#: cresta-social-share-counter.php:568 cresta-social-share-counter.php:571
+#: cresta-social-share-counter.php:574 cresta-social-share-counter.php:577
+msgid "PRO version"
+msgstr ""
+
+#: cresta-social-share-counter.php:574
+msgid "(only visible on smartphones Android and iPhone)"
+msgstr ""
+
+#: cresta-social-share-counter.php:584
+msgid "Choose buttons style :"
+msgstr ""
+
+#: cresta-social-share-counter.php:631
+msgid "Display Setting :"
+msgstr ""
+
+#: cresta-social-share-counter.php:635
+msgid "Enable reflection on the buttons"
+msgstr ""
+
+#: cresta-social-share-counter.php:641
+msgid "Enable shadow on the buttons"
+msgstr ""
+
+#: cresta-social-share-counter.php:647
+msgid "Enable animation"
+msgstr ""
+
+#: cresta-social-share-counter.php:653
+msgid "Social Counter Box: Use the same colors of social network"
+msgstr ""
+
+#: cresta-social-share-counter.php:659
+msgid "Show Social Counter"
+msgstr ""
+
+#: cresta-social-share-counter.php:662
+msgid ""
+"Visible only on floating buttons, buy the PRO version to use it in the "
+"content"
+msgstr ""
+
+#: cresta-social-share-counter.php:666
+msgid "newsharecounts.com for Twitter Counts"
+msgstr ""
+
+#: cresta-social-share-counter.php:669
+msgid ""
+"To use newsharecounts.com public API, you have to enter your website url"
+msgstr ""
+
+#: cresta-social-share-counter.php:669
+msgid "and sign in using your Twitter Account at their website"
+msgstr ""
+
+#: cresta-social-share-counter.php:673
+msgid "Show single shares count only if is more than 0"
+msgstr ""
+
+#: cresta-social-share-counter.php:679
+msgid "Show Total Shares"
+msgstr ""
+
+#: cresta-social-share-counter.php:685
+msgid "Total Shares Text"
+msgstr ""
+
+#: cresta-social-share-counter.php:692
+msgid "Float Position :"
+msgstr ""
+
+#: cresta-social-share-counter.php:696
+msgid "Show Floating Buttons"
+msgstr ""
+
+#: cresta-social-share-counter.php:702
+msgid "Float Buttons Position"
+msgstr ""
+
+#: cresta-social-share-counter.php:706 cresta-social-share-counter.php:773
+msgid "Left"
+msgstr ""
+
+#: cresta-social-share-counter.php:709 cresta-social-share-counter.php:776
+msgid "Right"
+msgstr ""
+
+#: cresta-social-share-counter.php:715
+msgid "Distance From Top:"
+msgstr ""
+
+#: cresta-social-share-counter.php:721
+msgid "Distance From Left or Right:"
+msgstr ""
+
+#: cresta-social-share-counter.php:727
+msgid "Z-Index:"
+msgstr ""
+
+#: cresta-social-share-counter.php:730
+msgid ""
+"Increase this number if the floating buttons are covered by other items on "
+"the screen."
+msgstr ""
+
+#: cresta-social-share-counter.php:734
+msgid "Enable button to hide/show the floating buttons"
+msgstr ""
+
+#: cresta-social-share-counter.php:740
+msgid "Disable Floating Buttons On Mobile"
+msgstr ""
+
+#: cresta-social-share-counter.php:746
+msgid "Show CrestaProject Credit :)"
+msgstr ""
+
+#: cresta-social-share-counter.php:753
+msgid "Post and Page Position :"
+msgstr ""
+
+#: cresta-social-share-counter.php:757
+msgid "Add Social Buttons before post/page content"
+msgstr ""
+
+#: cresta-social-share-counter.php:763
+msgid "Add Social Buttons after post/page content"
+msgstr ""
+
+#: cresta-social-share-counter.php:769
+msgid "Buttons Position (in content):"
+msgstr ""
+
+#: cresta-social-share-counter.php:779
+msgid "Center"
+msgstr ""
+
+#: cresta-social-share-counter.php:785
+msgid "Shortcode"
+msgstr ""
+
+#: cresta-social-share-counter.php:787
+msgid "You can place the shortcode"
+msgstr ""
+
+#: cresta-social-share-counter.php:787
+msgid "wherever you want to display the social buttons."
+msgstr ""
+
+#: cresta-social-share-counter.php:792
+msgid "Show on :"
+msgstr ""
+
+#: cresta-social-share-counter.php:796
+msgid "Show on"
+msgstr ""
+
+#: cresta-social-share-counter.php:819
+msgid "Advanced :"
+msgstr ""
+
+#: cresta-social-share-counter.php:823
+msgid "Custom CSS Code"
+msgstr ""
+
+#: cresta-social-share-counter.php:826
+msgid ""
+"Write here your custom CSS code if you want to customize the style of the "
+"buttons"
+msgstr ""

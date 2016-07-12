@@ -1,0 +1,80 @@
+// FOOTER
+.page-footer .footer-block{
+  display: inline-block;
+  @include rem(padding, 25px 20px 20px);
+  width: 100%;
+
+  a{
+    color: $white-base;
+    font-weight: $bold;
+    opacity: 0.3;
+    @include rem(margin-bottom, 5px);
+    display: inline-block;
+    img{ width: 200px; }
+  }
+
+  p{
+    @include s-tiny;
+    text-align: center;
+    margin-bottom: 0px;
+
+    @include media($tablet){
+      text-align: left;
+    }
+
+    a{
+      color: $white-base;
+      font-weight: $bold;
+      opacity: 0.5;
+    }
+  }
+}
+
+.page-footer {
+  background-color: $grey-dark;
+  display: inline-block;
+  width: 100%;
+}
+
+.footer-logo{
+  text-align: center;
+  @include media($tablet){
+    float: left;
+  }
+}
+
+.footer-block .social-media{
+  @include rem(margin, 0 0 0 -20px);
+  @include rem(padding-top, 15px);
+  text-align: center;
+
+  @include media($tablet){
+    @include rem(padding-top, 0px);
+    text-align: right;
+  }
+
+  li{
+    display: inline-block;
+    @include rem(padding, 0 4px);
+    @include transition(all 0.3s ease-in-out);
+    margin: 0px;
+
+    a{
+      display: inline-block;
+      opacity: 0.3;
+      width: 45px;
+
+
+      img{ width: 45px; }
+
+      &:hover{
+        opacity: 1;
+      }
+    }
+
+
+
+    //@include media($tablet){ width: inherit; }
+  }
+}
+

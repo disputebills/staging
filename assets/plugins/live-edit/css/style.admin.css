@@ -1,0 +1,156 @@
+/*--------------------------------------------------------------------------------------------
+*
+*	Edit Areas
+*
+*--------------------------------------------------------------------------------------------*/
+
+#adminmenuback,
+#adminmenuwrap,
+#wpadminbar,
+#footer,
+#wpfooter,
+.update-nag {
+	display: none;
+}
+
+html.wp-toolbar {
+	padding-top: 0 !important;
+}
+
+#wpcontent {
+    margin-left: 0px !important;
+    padding: 70px 15px 15px !important;
+}
+
+body {
+	min-width: 0;
+	
+}
+
+#wpbody {
+	padding: 0;
+	margin: 0;
+}
+
+#wpwrap {
+	background: #F9F9F9;
+}
+
+.wrap {
+    margin: 0;
+}
+
+#wpbody-content .metabox-holder {
+    padding-top: 0px;
+}
+
+#post-body-content {
+    float: none;
+}
+
+#wpbody-content {
+    float: none;
+    padding-bottom: 0px;
+}
+
+#post-body {
+    background: transparent;
+    border: 0 none;
+}
+
+.form-title {
+	padding: 15px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	border-bottom: 1px solid #EEEEEE;
+	z-index: 999;
+	height: 40px;
+}
+
+.form-title h2 {
+	padding: 0;
+	margin: 10px 0;
+}
+
+.form-title ul {
+	position: absolute;
+	right: 15px;
+	top: 19px;
+}
+
+.form-title ul li {
+	margin-left: 10px;
+}
+
+.form-title .button {
+	height: 34px;
+    line-height: 32px;
+    padding: 0 12px 1px;
+    text-decoration: none;
+}
+
+.form-title .spinner {
+	float: left;
+	margin-top: 7px;
+}
+
+.acf-form {
+	
+}
+
+.acf-form-fields {
+	margin-left: -15px;
+	margin-right: -15px;
+	background: #fff;
+}
+
+.acf-form .acf-form-submit {
+	display: none;
+}
+
+.acf-form .credits {
+	border-top: 1px solid #EEEEEE;
+    color: #999999;
+    margin: 0;
+    padding: 15px 15px 0;
+    text-align: right;
+    background: #F9F9F9;
+}
+
+.acf-form .credits a {
+	text-decoration: none;
+}
+
+#setting-error-settings_updated {
+	display: none;
+}
+
+#message {
+	margin: 15px 0;
+}
+
+/* ACF4 */
+.acf_postbox .field {
+	padding: 15px;
+	border-top: 1px solid #EEEEEE;
+	border-bottom: 0 none;
+}
+
+.acf_postbox .field:first-child {
+    border-top: 0 none;
+}
+
+/* ACF5 */
+
+.acf-field  {
+	padding: 15px;
+	border-top: 1px solid #EEEEEE;
+	border-bottom: 0 none;
+}
+
+.acf-field:first-child {
+    border-top: 0 none;
+}

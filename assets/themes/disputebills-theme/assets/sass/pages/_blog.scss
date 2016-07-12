@@ -1,0 +1,260 @@
+//Blog Show
+
+.entry-header{
+  background-color: #4C637B;
+  text-align: center;
+  @include rem(padding, 40px 20px);
+  @include media($tablet){
+    @include rem(padding, 80px 20px );
+  }
+
+  h1{
+    @include center;
+    max-width: 900px;
+  }
+
+  p{ color: $white-base; }
+}
+
+.entry-container{
+  background-color: $white-base;
+  max-width: 850px;
+
+  @include media($tablet){
+    @include rem(padding, 60px);
+  }
+
+  p{
+    line-height: 1.6;
+    @include s-medium;
+  }
+
+  img, iframe{
+    @include rem(margin, 20px 0 30px);
+    height: inherit;
+    width: 100%;
+  }
+
+  h3, h4{ color: $blue-base; }
+
+  ul, ol {
+    @include rem(margin-bottom, 20px);
+    @include s-medium;
+    line-height: 1.6;
+  }
+
+  ul li { list-style-type: disc; @include rem(margin, 0 0 10px 30px); }
+  ol li { list-style-type: decimal; @include rem(margin, 0 0 10px 30px); }
+
+  blockquote, blockquote p {
+    @include s-bigger;
+    @include rem(margin, 40px 40px);
+    font-style: italic;
+    color: $blue-base;
+    line-height: 1.4;
+  }
+
+  blockquote p{
+    @include rem(margin, 40px 0px);
+  }
+}
+
+.post-navigation{ display: none; }
+
+
+//About the Author
+.author-block{
+  background-color: $white-light;
+  @include rem(margin-top, 30px);
+  @include rem(padding, 30px);
+  display: inline-block;
+
+  .author-image{
+    border-radius: 20em;
+    @include rem(margin-right, 20px);
+    float: left;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+
+    img{
+      @include vertical-center;
+      margin: 0px;
+    }
+  }
+
+  .author-text{
+    display: inline-block;
+    @include rem(margin-top, 30px);
+    width: 100%;
+
+    @include media($tablet){
+      @include rem(margin-top, 0px);
+      overflow: hidden;
+      width: calc(100% - 140px);
+    }
+  }
+}
+
+
+//Blog Index
+.post-index-container{
+
+  .entry-meta{ display: none; }
+
+
+  .post-item{
+    @include clearfix;
+    @include rem(margin-bottom, 60px);
+    img{
+      @include rem(margin-bottom, 15px);
+      @include media($tablet){
+        @include span-columns(3.5 of 12);
+        @include shift(1);
+        margin: 0px;
+      }
+    }
+
+    .post-preview{
+        @include media($tablet){
+        @include span-columns(7.25 of 12);
+        @include shift(0.5);
+      }
+    }
+
+    .post-intro{
+
+      .date{
+        font-weight: $bold;
+        @include s-small;
+        line-height: 1;
+      }
+
+      h3 a{
+        @include media($tablet){ @include s-bigger; line-height: 1.3;}
+      }
+
+      h3{
+        @include media($tablet){ line-height: 0; }
+      }
+    }
+    img{ height: inherit; }
+  }
+}
+
+.post-index-block{
+  @include media($tablet){
+    border-right: 1px solid $white-med;
+    @include rem(padding-right, 20px);
+    @include span-columns(9 of 12);
+  }
+}
+
+.widget-area{
+  @include media($tablet){
+    @include span-columns(3 of 12);
+  }
+
+  .widget-title{
+    @include rem(margin-top, 30px);
+  }
+}
+
+.single-post{
+  .widget-area, .comments-area{ display: none; }
+}
+
+.screen-reader-text{ display: none; }
+
+.teaser{
+  p{ display: inline; }
+  a.read-more{
+    display: inline-block;
+    font-style: italic;
+    color: $blue-dark;
+    opacity: 0.6;
+
+    &:hover{ opacity: 1; }
+  }
+}
+
+
+//Subscribe Widget
+// Importants need to overwrite wordpress widget styles :(
+#sm_wrapper{
+  border: 1px solid $white-med;
+  border-radius: 2px !important;
+  margin: 0px;
+  min-width: 100% !important;
+  padding: 0px !important;
+
+ input[type="text"], #sm_footer{ display: none; }
+
+ #sm_top{
+  background-color: #ECECEC !important;
+  @include rem(padding-top, 25px);
+  text-align: center;
+
+  li{
+    border-bottom: 1px solid $white-med;
+    color: $grey-dark !important;
+    margin: 0px !important;
+    padding: 0px 0px 20px !important;
+  }
+ }
+
+  p{
+    line-height: normal !important;
+    margin: 0px;
+    padding: 20px 0px 0px !important;
+    text-align: center;
+  }
+
+  input[type="email"]{
+    @include rem(padding, 10px !important);
+    margin: 15px 0px !important;
+    width: 100% !important;
+  }
+
+  input[type="submit"]{
+    background-color: $blue-base !important;
+    background: $blue-base !important;
+    font-size: 10px !important;
+    @include filter(hue-rotate(250deg));
+    margin: 0px !important;
+    padding: 14px !important;
+    width: 100%;
+  }
+
+  #sm_content{
+    background-color: $white-light !important;
+    border: none;
+    padding: 0px 15px 25px;
+
+  }
+}
+
+#sm_form > input[type="submit"], #sm_form > input[type="button"]{
+  background-color: $blue-base !important;
+  background: $blue-base !important;
+}
+
+//Recent Post & Popular Posts
+#recent-posts-2, #wpp-2{
+
+  li{
+    border-bottom: 1px solid $white-med;
+    @include rem(padding, 7px 0px);
+    @include s-small;
+    line-height: normal;
+
+    a{
+      color: $grey-base;
+      &:hover{ color: $blue-base; }
+    }
+
+    &:last-child{ border: none; }
+  }
+}

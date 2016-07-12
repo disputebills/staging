@@ -1,0 +1,412 @@
+[class*=-container] {
+  @include outer-container;
+  @include rem(padding, 40px 20px);
+  position: relative;
+
+  @include media($tablet){
+    @include rem(padding, 60px 20px);
+  }
+}
+
+.menu-main-navigation-container{ padding: 0;}
+
+/*-----------------------
+Page Header
+-----------------------*/
+.page-header{
+  height: 500px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url('../images/bill.jpg') no-repeat center;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  z-index:1;
+
+  &:after{
+    background-color: $black-dark;
+    content: "";
+    display: block;
+    @include position(absolute, 0px 0px 0px 0px);
+    opacity: 0.4;
+    z-index: -1;
+  }
+
+  p{ color: $white-base; }
+
+  &.entry-header{
+    height: 400px;
+
+    &:after{
+      background-color: #000;
+      opacity: 0.4;
+    }
+  }
+}
+
+.header-text{
+  @include vertical-horizontal-center;
+  width: 100%;
+  @include rem(padding, 20px);
+
+  .header-links{
+    @include rem(margin-top, 30px);
+
+    li{
+      display: inline-block;
+      @include rem(margin, 0 10px);
+    }
+  }
+}
+
+/*-----------------------
+Fact Block
+-----------------------*/
+.facts-container{
+  h3{
+    @include media($tablet){ @include span-columns(3 of 12); }
+  }
+
+  li{
+    @include span-columns(4 of 12);
+
+    @include media($tablet){
+      @include span-columns(3 of 12);
+    }
+
+    .stat{
+      @include s-huge;
+      @include rem(margin-bottom, 5px);
+      line-height: 1;
+          margin: 0 auto;
+
+      @include media($tablet){
+        @include s-mega;
+      }
+    }
+
+    p{
+      color: $blue-base;
+      @include s-small;
+      line-height: 1.3;
+      max-width: 75px;
+      text-align: center;
+          margin: 0 auto;
+
+      @include media($tablet){
+        @include s-base;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+/*-----------------------
+App Features
+-----------------------*/
+.features{ background-color: $blue-light; }
+
+.features-container{
+
+  .subheader{ max-width: 600px; }
+
+  .features-list{
+    @include media($tablet){ @include span-columns(12 of 12); }
+    @include media($tablet-landscape){ @include span-columns(8 of 12); }
+    li{
+      @include rem(margin-top, 30px);
+
+      @include media($tablet){
+        @include span-columns(6 of 12);
+        @include omega(2n);
+      }
+
+      img{
+        width: 30px;
+        display: inline-block;
+        @include rem(margin-right, 15px);
+        vertical-align: top;
+      }
+      .feature-text{
+        display: inline-block;
+        width: calc(100% - 55px);
+        @include s-small;
+      }
+    }
+  }
+}
+
+//Image
+.ui-shot{
+  @include rem(padding-top, 30px);
+  @include media($tablet){
+    @include center;
+    @include rem(padding-top, 50px);
+    width: 70%;
+  }
+
+  @include media($tablet) {
+    @include vertical-center;
+    padding: 0;
+    right: -30%;
+    width: 60%;
+  }
+}
+
+/*-----------------------
+Testimonials
+-----------------------*/
+.testimonials{ background-color: $white-light; }
+
+.testimonial-container{
+  h2{ text-align: center; }
+}
+
+.testimonial-block{
+  @include rem(margin-top, 50px);
+
+  li{
+    @include rem(margin-bottom, 30px);
+    &:last-child{ margin-bottom: 0; }
+
+    @include media($tablet){
+      @include span-columns(4 of 12);
+    }
+
+  cite{
+    display: inline-block;
+    width: 100%;
+    @include rem(margin-bottom, 15px);
+
+    h6{ @include rem(margin, 12px 0 0); }
+    p{ @include s-small; }
+  }
+
+  img{
+    width: 60px;
+    border-radius: 20em;
+    float: left;
+    @include rem(margin-right, 15px);
+   }
+  }
+}
+
+/*-----------------------
+Callout
+-----------------------*/
+.callout{
+  background-color: $blue-base;
+  @include media($tablet){ position: relative; }
+
+  h2, p { color: $white-base; }
+
+  .callout-text{
+    text-align: center;
+    @include media($tablet){
+      @include span-columns(8.5 of 12);
+      @include vertical-center;
+      text-align: left;
+    }
+  }
+
+  img{
+    display: none;
+
+    @include media($tablet){
+      @include rem(margin-bottom, -60px);
+      @include span-columns(3 of 12);
+      @include shift(8.75);
+    }
+  }
+}
+
+/*-----------------------
+Blog
+-----------------------*/
+.image-content-blocks{
+  display: inline-block;
+  position: relative;
+  width: 100%;
+
+  &.contrast{ background-color: $white-light; }
+
+  .image-block{
+    height: 250px;
+    width: 100%;
+
+    @include media($tablet){
+      height: 100%;
+      position: absolute;
+      width: 50%;
+    }
+  }
+  .text-block{
+    @include rem(padding, 40px 20px);
+
+    @include media($tablet){
+      @include rem(padding, 60px 40px);
+      margin-left: 50%;
+      max-width: 550px;
+      width: 50%;
+    }
+
+    li{
+       @include rem(margin-top, 30px);
+    }
+  }
+
+  .button-blue-outline{ @include rem(margin-top, 30px); }
+
+  h4{
+    color: $blue-base;
+    font-weight: $bold;
+    @include rem(margin-top, 10px);
+    display: inline-block;
+  }
+}
+
+/*-----------------------
+Text Image Block
+-----------------------*/
+.text-image-container{
+  .text-block{
+    @include media($tablet){
+      @include span-columns(5.5 of 12);
+      @include vertical-center;
+    }
+
+    h3{ color: $blue-base; }
+  }
+  .image-block{
+    @include rem(margin-top, 30px);
+    @include media($tablet){
+      @include span-columns(6 of 12);
+      @include shift(6.25);
+    }
+  }
+}
+
+
+/*-----------------------
+List (Careers)
+-----------------------*/
+.list-container{
+  text-align: center;
+
+  .list-blocks{
+    @include rem(margin-top, 30px);
+    @include media($tablet){
+      @include span-columns(8 of 12);
+      @include shift(2);
+    }
+
+    li{
+      border-bottom: 1px solid $white-med;
+      display: inline-block;
+      margin: 0;
+      vertical-align: middle;
+      width: 100%;
+
+      &:first-child{ border-top: 1px solid $white-med; }
+      h4{ float: left; @include rem(margin, 15px 0); }
+      a{ float: right; @include rem(margin-top, 15px); }
+    }
+  }
+}
+
+/*-----------------------
+Press
+-----------------------*/
+.press-wrapper{
+  background-color: $white-light;
+
+  h2{ text-align: center; }
+
+  li{
+    @include rem(margin-top, 30px);
+    display: inline-block;
+    .date{
+      @include s-small;
+      font-weight: $bold;
+      @include media($tablet){
+        @include span-columns(2 of 12);
+        @include shift(1);
+        text-align: right;
+      }
+    }
+    .press-text{
+      @include media($tablet){
+        @include span-columns(8 of 12);
+      }
+    }
+  }
+}
+
+/*-----------------------
+How it Works
+-----------------------*/
+.three-blocks-wrapper{
+  background-color: $blue-light;
+  text-align: center;
+
+  li{
+    @include rem(margin-top, 30px);
+
+    @include media($tablet){
+      @include span-columns(4 of 12);
+    }
+
+    .icon{
+      background-color: $blue-base;
+      border-radius: 20em;
+      display: inline-block;
+      height: 100px;
+      @include rem(margin-bottom, 15px);
+      position: relative;
+      width: 100px;
+
+      img{
+        @include vertical-horizontal-center;
+        opacity: 0.9;
+        width: 40px;
+      }
+    }
+
+  }
+}
+
+//checkmark
+
+.checkmark{
+  li{ @include rem(margin-left, 40px); }
+
+  li:before{
+    content:"";
+    background-image: url(../images/checkmark.png);
+    display: block;
+    height: 30px;
+    width: 30px;
+    background-size: 100%;
+    display: inline-block;
+    vertical-align: -7px;
+    @include rem(margin-right, 10px);
+    @include rem(margin-left, -40px);
+  }
+}
+
+.bullet-list{
+  list-style: disc;
+  @include rem(margin-left, 20px);
+}
+
+a.post-edit-link{ display:none; }
+
+
+/*-----------------------
+Contact
+-----------------------*/
+img.ajax-loader {
+    display: none !important;
+}
+
+.wpcf7-not-valid-tip{
+  @include rem(margin-top, 10px !important);
+}

@@ -1,0 +1,49 @@
+#{$all-text-inputs},
+select,
+textarea{
+  @include appearance(none);
+  @include font-type($primary-sans-serif, normal, $regular);
+  @include s-base;
+  border: 1px solid $white-med;
+  border-radius: 3px;
+  box-sizing: border-box;
+  @include rem(padding, 15px);
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  background-color: $white-base;
+  @include rem(margin-top, 15px);
+
+  @include placeholder{
+    color: $grey-light;
+    @include s-small;
+  }
+
+  &:focus{
+    border-color: $blue-base;
+    outline: none;
+  }
+}
+
+textarea,
+textarea[type="text"]{
+  height: 200px;
+  @include rem(margin-bottom, 12px);
+  resize: vertical;
+}
+
+.form-block{
+  @include media($tablet){
+    @include center;
+    width: 50%;
+  }
+}
+
+.form-container{
+  h2{ text-align: center; }
+
+  form{
+    @include media($tablet){
+      @include rem(margin-top, 30px);
+    }
+  }
+}

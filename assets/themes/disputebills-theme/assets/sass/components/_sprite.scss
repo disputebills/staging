@@ -1,0 +1,60 @@
+//ICONS
+
+.sprite {
+  background-image: url('../images/sprite.svg');
+  background-repeat: no-repeat;
+  display: inline-block;
+  text-indent: -99999px;
+}
+
+@mixin chicago-line-icon($height: 30px, $width: 30px){
+  background-size: ($width * 18) ($width * 1);
+  height: $height;
+  width: $width;
+}
+
+$icon-sizes: (
+  xsmall 20px,
+  small  35px,
+  large  70px,
+  xl     140px
+);
+
+//LIST
+$sprite-icons: (
+  facebook           0,
+  twitter            1,
+  instagram          2,
+  pinterest          3,
+  google-plus        4,
+  youtube            5,
+  trip-advisor       6,
+  yelp               7,
+  next               8,
+  close              9,
+  menu-white         10,
+  menu-black         11,
+  charters           12,
+  directions         13,
+  photo-video        14,
+  ticket             15,
+  schedule           16,
+  boat               17
+);
+
+//LOOP
+@each $sprite-icon in $sprite-icons{
+  $icon-name:   nth($sprite-icon, 1);
+  $position-num: nth($sprite-icon, 2);
+
+  @each $icon-size in $icon-sizes{
+    $size-name: nth($icon-size, 1);
+    $size:      nth($icon-size, 2);
+    $position: $size * $position-num;
+
+    .#{$icon-name}-#{$size-name}{
+      background-position: -($position * 1) 0;
+      @include chicago-line-icon($width: $size, $height: $size);
+    }
+  }
+}

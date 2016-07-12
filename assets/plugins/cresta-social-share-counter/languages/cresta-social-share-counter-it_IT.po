@@ -1,0 +1,191 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cresta Social Share Counter\n"
+"Report-Msgid-Bugs-To: http://crestaproject.com\n"
+"POT-Creation-Date: 2015-10-01 18:26:45+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-10-02 10:36+0100\n"
+"Last-Translator: \n"
+"Language-Team: WP-Translations <wpt@wp-translations.org>\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"Language: it_IT\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: cresta-metabox.php:14
+msgid "Cresta Social Share Counter"
+msgstr "Cresta Social Share Counter"
+
+#: cresta-metabox.php:29
+msgid "Hide icons in this page?"
+msgstr "Mascondere bottoni social in questa pagina?"
+
+#: cresta-social-share-counter.php:29
+msgid "Settings"
+msgstr "Optioni"
+
+#: cresta-social-share-counter.php:453
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Non hai i permessi sufficienti per poter accedere a questa pagina."
+
+#: cresta-social-share-counter.php:456
+msgid "Settings Saved..."
+msgstr "Opzioni Salvate..."
+
+#: cresta-social-share-counter.php:529
+msgid "Cresta Social Share Counter Settings"
+msgstr "Opzioni Cresta Social Share Counter"
+
+#: cresta-social-share-counter.php:536
+msgid "Select buttons to display on website :"
+msgstr "Seleziona i bottoni da mostrare sul sito :"
+
+#: cresta-social-share-counter.php:544
+msgid "Twitter username (optional):"
+msgstr "Username di Twitter (opzionale):"
+
+#: cresta-social-share-counter.php:559 cresta-social-share-counter.php:562
+#: cresta-social-share-counter.php:565 cresta-social-share-counter.php:568
+#: cresta-social-share-counter.php:571 cresta-social-share-counter.php:574
+msgid "PRO version"
+msgstr "PRO Version"
+
+#: cresta-social-share-counter.php:571
+msgid "(only visible on smartphones Android and iPhone)"
+msgstr "(visibile solo su smartphone Android e iPhone)"
+
+#: cresta-social-share-counter.php:578
+msgid "Choose buttons style :"
+msgstr "Scegli lo stile dei bottoni :"
+
+#: cresta-social-share-counter.php:619
+msgid "Display Setting :"
+msgstr "Opzioni di visualizzazione :"
+
+#: cresta-social-share-counter.php:621
+msgid "Enable reflection on the buttons"
+msgstr "Abilita riflesso sui bottoni"
+
+#: cresta-social-share-counter.php:624
+msgid "Enable shadow on the buttons"
+msgstr "Abilita ombra sui bottoni"
+
+#: cresta-social-share-counter.php:627
+msgid "Enable animation"
+msgstr "Abilita animazioni"
+
+#: cresta-social-share-counter.php:630
+msgid "Social Counter Box: Use the same colors of social network"
+msgstr "Box singola condivisione: Usa lo stesso colore dei social network"
+
+#: cresta-social-share-counter.php:633
+msgid "Show Social Counter"
+msgstr "Mostra il numero di condivisioni"
+
+#: cresta-social-share-counter.php:634
+msgid ""
+"Visible only on floating buttons, buy the PRO version to use it in the "
+"content"
+msgstr ""
+"Visibile solo sui bottoni galleggianti, acquista la versione PRO per "
+"visualizzarli anche nel contenuto"
+
+#: cresta-social-share-counter.php:637
+msgid "Show Total Shares"
+msgstr "Mostra condivisioni totali"
+
+#: cresta-social-share-counter.php:640
+msgid "Total Shares Text:"
+msgstr "Testo condivisioni totali"
+
+#: cresta-social-share-counter.php:644
+msgid "Float Position :"
+msgstr "Posizione bottoni galleggianti :"
+
+#: cresta-social-share-counter.php:646
+msgid "Show Floating Buttons"
+msgstr "Mostra bottoni galleggianti"
+
+#: cresta-social-share-counter.php:649
+msgid "Float Buttons Position:"
+msgstr "Posizione dei bottoni galleggianti:"
+
+#: cresta-social-share-counter.php:649 cresta-social-share-counter.php:676
+msgid "Left"
+msgstr "Sinistra"
+
+#: cresta-social-share-counter.php:649 cresta-social-share-counter.php:676
+msgid "Right"
+msgstr "Destra"
+
+#: cresta-social-share-counter.php:652
+msgid "Position From Top:"
+msgstr "Posizione da sopra:"
+
+#: cresta-social-share-counter.php:654
+msgid "Position From Left or Right:"
+msgstr "Posizione da sinistra o destra:"
+
+#: cresta-social-share-counter.php:656
+msgid "Z-Index:"
+msgstr "Z-Index:"
+
+#: cresta-social-share-counter.php:656
+msgid ""
+"Increase this number if the floating buttons are covered by other items on "
+"the screen."
+msgstr ""
+"Aumenta questo numero se i bottoni galleggianti sono coperti da altri "
+"elementi nello schermo."
+
+#: cresta-social-share-counter.php:658
+msgid "Enable button to hide/show the floating buttons"
+msgstr "Abilita il tasto per nascondere/mostrare i bottoni galleggianti"
+
+#: cresta-social-share-counter.php:661
+msgid "Disable Floating Buttons On Mobile"
+msgstr "Disabilita bottoni galleggianti su mobile"
+
+#: cresta-social-share-counter.php:664
+msgid "Show CrestaProject Credit :)"
+msgstr "Mostra i crediti di CrestaProject :)"
+
+#: cresta-social-share-counter.php:668
+msgid "Post and Page Position :"
+msgstr "Posizione nelle pagine e negli articoli :"
+
+#: cresta-social-share-counter.php:670
+msgid "Add Social Buttons before post/page content"
+msgstr "Mostra i bottoni social prima del contenuto della pagina/articolo"
+
+#: cresta-social-share-counter.php:673
+msgid "Add Social Buttons after post/page content"
+msgstr "Mostra i bottoni social dopo il contenuto della pagina/articolo"
+
+#: cresta-social-share-counter.php:676
+msgid "Buttons Position (in content):"
+msgstr "Posizione dei bottoni (nel contenuto):"
+
+#: cresta-social-share-counter.php:676
+msgid "Center"
+msgstr "Centro"
+
+#: cresta-social-share-counter.php:679
+msgid "You can place the shortcode"
+msgstr "Puoi utilizzare lo shortcode"
+
+#: cresta-social-share-counter.php:679
+msgid "wherever you want to display the social buttons."
+msgstr "dove preferisci mostrare i bottoni social."
+
+#: cresta-social-share-counter.php:683
+msgid "Show on :"
+msgstr "Mostra in :"

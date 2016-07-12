@@ -1,0 +1,92 @@
+
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+
+#START - WP Hide & Security Enhancer
+
+RewriteCond %{REQUEST_URI} /+[^\.]+$
+RewriteRule ^(.+[^/])$ %{REQUEST_URI}/ [R=301,L]
+#END - WP Hide & Security Enhancer
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+# Add SVG Mime Types
+AddType image/svg+xml svg
+AddType image/svg+xml svgz
+
+# Blog
+Redirect 301 /news /blog
+Redirect 301 /news-old /blog
+Redirect 301 /dipsute-partners /dispute-partners-with-the-american-seniors-association-the-fastest-growing-senior-advocacy-in-the-nation
+Redirect 301 /cutting-high-medical-costs-if-youre-uninsured /are-you-uninsured-and-facing-high-medical-costs-5-strategies-to-consider-when-youve-been-overcharged
+Redirect 301 /dispute-partners-with-aacy /dispute-partners-with-the-american-association-of-caregiving-youth
+Redirect 301 /top-10-personal-finance-blogs /top-10-personal-finance-blogs-for-beginners
+Redirect 301 /home/how-to-dispute-medical-bill /3-reasons-you-need-to-negotiate-your-medical-bills
+Redirect 301 /dispute-is-live /chicagos-medical-billing-negotiation-platform-is-live
+Redirect 301 /dispute-featured-on-tech-co /dispute-launch-featured-on-tech-co
+Redirect 301 /millennials-shaping-healthcare /the-top-10-ways-millennials-are-shaping-healthcare
+
+# Category
+Redirect 301 /consumer-tips /blog
+Redirect 301 /category/consumer-tips /blog
+Redirect 301 /company-news /blog
+Redirect 301 /category/company-news /blog
+Redirect 301 /category/uncategorized /blog
+Redirect 301 /uncategorized /blog
+
+#Random
+Redirect 301 /full-width /
+Redirect 301 /download /
+
+# Author
+Redirect 301 /author/michael-sepke/ /blog
+Redirect 301 /author/mattmoulakelis /blog
+Redirect 301 /author/mariah-raynor/ /blog
+Redirect 301 /author/katieshaykin /blog
+
+# Glossary
+Redirect 301 /glossary /blog
+Redirect 301 /glossary/aacy /blog
+
+# Login
+Redirect 301 /dispute-login https://app.disputebills.com/users/sign_in
+
+# Sign Up
+Redirect 301 /startmydispute https://app.disputebills.com/clients/sign_up
+
+# Support
+Redirect 301 /support /blog
+
+# Terms of Use
+Redirect 301 /terms-of-use /how-it-works
+
+# Pricing
+Redirect 301 /pricing-options /
+
+#Thank You
+Redirect 301 /thank-you-subscriber /thank-you
+
+# Sitemap
+Redirect 301 /sitemap /
+
+#About
+Redirect 301 /who-is-dispute /about
+
+# Search
+Redirect 301 /search /
+
+# Privacy Policy
+Redirect 301 /privacy-policy /how-it-works
+
+# Faqs
+Redirect 301 /faqs /how-it-works
+

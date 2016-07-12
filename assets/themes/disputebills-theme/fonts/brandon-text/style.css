@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "brandon-text-light";
+  src: url("../fonts/brandon-text/brandon-text-light.eot");
+  src: url("../fonts/brandon-text/brandon-text-light.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon-text/brandon-text-light.woff") format("woff"), url("../fonts/brandon-text/brandon-text-light.ttf") format("truetype"), url("../fonts/brandon-text/brandon-text-light.svg#brandon-text-light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "brandon-text-regular";
+  src: url("../fonts/brandon-text/brandon-text-regular.eot");
+  src: url("../fonts/brandon-text/brandon-text-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon-text/brandon-text-regular.woff") format("woff"), url("../fonts/brandon-text/brandon-text-regular.ttf") format("truetype"), url("../fonts/brandon-text/brandon-text-regular.svg#brandon-text-regular") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "brandon-text-medium";
+  src: url("../fonts/brandon-text/brandon-text-medium.eot");
+  src: url("../fonts/brandon-text/brandon-text-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon-text/brandon-text-medium.woff") format("woff"), url("../fonts/brandon-text/brandon-text-medium.ttf") format("truetype"), url("../fonts/brandon-text/brandon-text-medium.svg#brandon-text-medium") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: "brandon-text-mediumitalic";
+  src: url("../fonts/brandon-text/brandon-text-mediumitalic.eot");
+  src: url("../fonts/brandon-text/brandon-text-mediumitalic.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon-text/brandon-text-mediumitalic.woff") format("woff"), url("../fonts/brandon-text/brandon-text-mediumitalic.ttf") format("truetype"), url("../fonts/brandon-text/brandon-text-mediumitalic.svg#brandon-text-mediumitalic") format("svg");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: "brandon-text-bold";
+  src: url("../fonts/brandon-text/brandon-text-bold.eot");
+  src: url("../fonts/brandon-text/brandon-text-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon-text/brandon-text-bold.woff") format("woff"), url("../fonts/brandon-text/brandon-text-bold.ttf") format("truetype"), url("../fonts/brandon-text/brandon-text-bold.svg#brandon-text-bold") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+  body {
+  font-family: "brandon-text-regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
