@@ -52,7 +52,8 @@ assets/mu-plugins/stop-long-comments.php
 assets/mu-plugins/force-strong-passwords
 assets/mysql.sql
 assets/wp-link-status-salt.php
-
+assets/ai1wm-backups
+assets/aiowps_backups
 
 
 # wp core (as of 3.4.1)
@@ -84,6 +85,7 @@ assets/wp-link-status-salt.php
 /xmlrpc.php
 /wp-admin
 /wp-includes
+/wp-content
 
 
 /wp-content/index.php
