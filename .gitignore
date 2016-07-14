@@ -11,6 +11,7 @@ Thumbs.db
 .gitattributes
 _wpeprivate
 sucuri-test.php
+last-mod
 
 # wordpress specific
 wp-config.php
