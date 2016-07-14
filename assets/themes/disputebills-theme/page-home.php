@@ -146,6 +146,7 @@
     <img src="http://disputebills.com/assets/uploads/2016/03/dispute-bills-chicago-featured.png">
 </div>
 </header>
+hello world
 
 
 <section class="container-fluid-max facts-container"><div class="flex-row row"><h3 class=col-sm-4>The proof is in the numbers</h3><div class=col-sm-8><ul class="text-center list-unstyled adj-column row"><li class=col-xs-4><p class=stat>75%<p>Bill Reduction<li class=col-xs-4><p class=stat>90%<p>Success Rate<li class=col-xs-4><p class=stat>2<p>Week Case Timeline</ul></div></div></section>
